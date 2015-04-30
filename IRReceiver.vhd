@@ -6,7 +6,7 @@ entity IRReceiver is
        iIRDA       : in std_logic;
        iRst        : in std_logic;
        oData_Ready : out std_logic;
-       oData       : out std_logic_vector(31 downto 0));
+       oData       : out std_logic_vector(7 downto 0));
 end IRReceiver;
 
 architecture Behavioral of IRReceiver is
@@ -122,7 +122,7 @@ begin
         end if;
         --
         if(data_ready = '1') then
-          oData <= data_buff;
+          oData <= data_buff(23 downto 16);
         end if;
       end if;
     end if;
