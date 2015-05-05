@@ -27,7 +27,7 @@
 \section{Especificação do Sistema}
 \label{sec:especificação}
 
-Irá ser utilizado o comando infra-vermelhos disponibilizado juntamente com o kit Terasic DE2-115 (ver \url{http://goo.gl/JYc7PE}, p. 98) de forma a controlar os seus LEDs verdes. Os dígitos do comando deverão controlar a quantidade de LEDs acesos enquanto que duas setas deverão controlar a sua intensidade luminosa. O botão de \verb|POWER| deverá colocar a máquina num estado inactivo, com todos os LEDs apagados, e retomar o seu estado quando premida novamente. Na Figura \ref{fig:ir_leds0} são demonstradas estas relações.
+Irá ser utilizado o comando infra-vermelhos disponibilizado juntamente com o kit Terasic DE2-115 (ver \url{http://goo.gl/JYc7PE}, p. 98) de forma a controlar os seus LEDs verdes. Os dígitos do comando deverão controlar a quantidade de LEDs acesos enquanto que duas setas deverão controlar a sua intensidade luminosa. O botão de \verb|POWER| deverá colocar a máquina num estado inativo, com todos os LEDs apagados, e retomar o seu estado quando premida novamente. Na Figura \ref{fig:ir_leds0} são demonstradas estas relações.
 
 \begin{figure}[ht]
 \center
@@ -51,15 +51,15 @@ O sistema deverá funcionar de acordo como o exemplificado na Figura \ref{fig:ir
 
 O sistema deverá funcionar conforme o especificado na Secção \ref{sec:especificação}, e indicado na Figura \ref{fig:ir_leds1}.
 
-Desta forma pensou-se recorrer-se aos blocos abaixo de forma a atingir-se este funcionamento. Atendendo a que a máquina terá essencialmente dois processos a correr em simultâneo (a definir a quantidade de LEDs acesos e a intensidade luminosa destes), optou-se por se dividir estas funções por dois ramos bastantes ``concretos'', cada um resolvendo uma parte do problema. O resultado final deverá ser a junção  dos resultados obtidos nestes caminhos. Um diagrama de blocos do projecto a desenvolver é ilustrado na Figura \ref{fig:ir_leds2}.
+Desta forma pensou-se em recorrer aos blocos abaixo de forma a atingir este funcionamento. Atendendo a que a máquina terá essencialmente dois processos a correr em simultâneo (a definir a quantidade de LEDs acesos e a intensidade luminosa destes), optou-se por se dividir estas funções por dois ramos bastantes ``concretos'', cada um resolvendo uma parte do problema. O resultado final deverá ser a junção  dos resultados obtidos nestes caminhos. Um diagrama de blocos do projecto a desenvolver é ilustrado na Figura \ref{fig:ir_leds2}.
 
 \begin{description}
-\item[Recetor IR] Responsável por receber o código infra-vermelhos enviado pelo comando e transmitir para o resto da máquino um código de 8 bits, referente à tecla premida.
+\item[Recetor IR] Responsável por receber o código infra-vermelhos enviado pelo comando e transmitir para o resto da máquina um código de 8 bits, referente à tecla premida.
 \item[Descodificador de IR] Responsável por receber um código de 8 bits e transmitir a cada um dos ramos correspondentes um código indicativo do que deverá ser levado a cabo. Um código pode dizer respeito à intensidade luminosa dos LEDs ou à quantidade de LEDs acesos.
 \item[Contador PWM] Responsável por manter registo do valor de luminosidade em uso, e ajustá-lo conforme indicado: adicionando ou subtraindo uma unidade ao valor atual, guardando este valor e colocando a luminosidade a zero (ou vice-versa), ou simplesmente mantendo este valor sem alterações. É um bloco directamente controlado pelo \verb|Descodificador de IR|.
 \item[Controlo PWM] Responsável por, recebendo um valor binário de 5 bits, controlar a intensidade luminosa dos LEDs através de \textbf{Pulse Width Modulation (PWM)}, técnica desenvolvida abaixo.
 \item[Descodificador 5 bits - 7 Seg] Responsável por recebendo um valor binário de 5 bits, transmitir dois vectores cada um de 7 bits com o valor correspondente em decimal construídos de forma a serem directamente utilizáveis em displays de sete segmentos (considere-se que o valor de 5 bits é sem sinal, variando de 0 a 31).
-\item[Controlo de Tamanho] Responsável por definir a quantidade de LEDs ativos e inativos, a partir de um valor $k,\ 0 \leq k \leq 9$ transmitido pelo \verb|Descodificador de IR|. Assim, a sua saída é um vector de 9 bits, onde $k$ estão ativos e $9 - k$ desactivos. Os bits mais significativos deverão ser sempre os desactivos. Os $k$ bits ativos deverão já estar modulados de acordo com a saída do bloco \verb|Controlo PWM|. 
+\item[Controlo de Tamanho] Responsável por definir a quantidade de LEDs ativos e inativos, a partir de um valor $k,\ 0 \leq k \leq 9$ transmitido pelo \verb|Descodificador de IR|. Assim, a sua saída é um vector de 9 bits, onde $k$ estão ativos e $9 - k$ desativos. Os bits mais significativos deverão ser sempre os desativos. Os $k$ bits ativos deverão já estar modulados de acordo com a saída do bloco \verb|Controlo PWM|. 
 \end{description}
 
 \begin{figure}[ht]
