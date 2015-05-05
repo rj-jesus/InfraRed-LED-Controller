@@ -1,0 +1,13 @@
+*.aux
+*.bcf
+*.lof
+*.log
+*.out
+*.pdf
+*.xml
+*.gz
+*.toc
+*.bbl
+*.blg
+*.pyg
+!ua.pdf
