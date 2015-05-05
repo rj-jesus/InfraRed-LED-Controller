@@ -64,9 +64,10 @@ Desta forma pensou-se em recorrer aos blocos abaixo de forma a atingir este func
 \subsection{Notas Importantes}
 
 \begin{itemize}
-\item Os códigos infra-vermelhos são recebidos bit a bit pelo bloco \verb|Recetor| \verb|IR|. É responsabilidade deste assegurar a construção de um vector de 8 bits (tamanho do código correspondente a uma tecla do comando), dando indicação de quando o valor de saída é válido. Este bloco acenta numa máquina de estados conforme exemplificado na Figura \ref{fig:ir_leds2} e princípios disponiveis em \url{URL to Terasic page!}.
+\item Os códigos infra-vermelhos são recebidos bit a bit pelo bloco \verb|Recetor| \verb|IR|. É responsabilidade deste assegurar a construção de um vector de 8 bits (tamanho do código correspondente a uma tecla do comando), dando indicação de quando o valor de saída é válido. Este bloco acenta numa máquina de estados conforme exemplificado na Figura \ref{fig:ir_leds2} e princípios disponiveis em \url{http://goo.gl/VjNYSf}, p.77.
 \item Pulse Width Modulation (PWM) é uma técnica utilizada para obter resultados analógicos através de meios digitais. Essencialmente é criada uma onda quadrada, comutando entre ON/OFF. Variando o intervalo de tempo que o sinal está ON face ao que está a OFF, é possível simular uma variação de voltagem, permitindo a alteração de intensidade luminosa de LEDs. Um breve resumo sobre o assunto está disponível em \url{http://www.arduino.cc/en/Tutorial/PWM}.
 \item Esta arquitetura é a que nos comprometemos a realizar, no entanto, caso no desenvolvimento do projeto achemos que seria interessante implementar algo mais ou de alguma forma diferente, comunicá-lo-emos ao professor responsável e em resposta afirmativa modificaremos a arquitetura de forma a incluir essas alterações. Assim, o resultado final poderá variar ligeiramente do expresso aqui, no entanto a base do trabalho deverá manter-se constante ao longo de todo o projecto.
+\item Apesar de ter sido disponibilizado um descodificador de infra-vermelhos pelos docentes da unidade curricular de Laboratórios de Sistemas Digitais, pretendemos desenvolver o nosso próprio descodificador e utilizá-lo no âmbito do projeto.
 \end{itemize}
 
 \begin{figure}[ht]
