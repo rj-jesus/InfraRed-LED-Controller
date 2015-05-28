@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 28 23:13:44 2015
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Revision Name : SandraRicardoAwesomeProject
+Top-level Entity Name : SandraRicardoAwesomeProject
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 809 / 114,480 ( < 1 % )
+    Total combinational functions : 778 / 114,480 ( < 1 % )
+    Dedicated logic registers : 471 / 114,480 ( < 1 % )
+Total registers : 471
+Total pins : 52 / 529 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+--use IEEE.NUMERIC_STD.all;
+
+entity WinningRom is
+  port(iClk   : in std_logic;
+       iRst   : in std_logic;
+       iEn    : in std_logic;
+       oDataL : out std_logic_vector(15 downto 0);
+       oDataR : out std_logic_vector(15 downto 0));
+end WinningRom;
+
+architecture RTL of WinningRom is
+  constant ArraySize : natural := 2;
+  type TROM is array(0 to ArraySize-1) of std_logic_vector(15 downto 0);
+  constant WinningL : TROM := (x"0000", x"0001");
+  constant WinningR : TROM := (x"0000", x"0001");
+  signal Counter : natural := 0;
+begin
+  process(iClk)
+  begin
+    if(rising_edge(iClk)) then
+      if(iRst = '1') then
+        Counter <= 0;
+      elsif(iEn = '1') then
+        if(Counter < ArraySize) then
+          Counter <= Counter + 1;
+        else
+          Counter <= 0;
+        end if;
+      end if;
+    end if;
+  end process;
+  oDataL <= WinningL(Counter);
+  oDataR <= WinningR(Counter);
+end RTL;

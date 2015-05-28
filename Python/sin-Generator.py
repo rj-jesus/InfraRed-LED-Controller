@@ -5,7 +5,7 @@ from math import pi, sin
 
 
 frequency = {'c4':  261.63, 'd4':  293.66, 'e4':  329.63, 'f4':  349.23, 'g4':  392.00, 'a4':  440.00, 'b4':  493.88, 'c5':  523.25}
-frame_rate = 44100
+frame_rate = 48000
 amplitude = 32767
 
 

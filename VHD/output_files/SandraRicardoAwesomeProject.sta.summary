@@ -1,0 +1,269 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'AUD_BCLK'
+Slack : -5.321
+TNS   : -371.163
+
+Type  : Slow 1200mV 85C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -3.449
+TNS   : -109.715
+
+Type  : Slow 1200mV 85C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -2.539
+TNS   : -91.760
+
+Type  : Slow 1200mV 85C Model Setup 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -2.147
+TNS   : -11.208
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -1.568
+TNS   : -14.593
+
+Type  : Slow 1200mV 85C Model Setup 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.175
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.057
+TNS   : -2.057
+
+Type  : Slow 1200mV 85C Model Hold 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.757
+TNS   : -8.401
+
+Type  : Slow 1200mV 85C Model Recovery 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -0.247
+TNS   : -7.055
+
+Type  : Slow 1200mV 85C Model Removal 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.769
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.210
+TNS   : -98.300
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -3.210
+TNS   : -49.470
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -61.680
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.753
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 27.487
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'AUD_BCLK'
+Slack : -4.640
+TNS   : -321.987
+
+Type  : Slow 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -3.014
+TNS   : -95.655
+
+Type  : Slow 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -2.237
+TNS   : -79.329
+
+Type  : Slow 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -1.899
+TNS   : -9.477
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.348
+TNS   : -12.223
+
+Type  : Slow 1200mV 0C Model Setup 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.106
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.912
+TNS   : -1.912
+
+Type  : Slow 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.447
+TNS   : -4.126
+
+Type  : Slow 1200mV 0C Model Recovery 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -0.155
+TNS   : -4.098
+
+Type  : Slow 1200mV 0C Model Removal 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.577
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.210
+TNS   : -98.300
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -3.210
+TNS   : -49.470
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -61.680
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.776
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 27.487
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'AUD_BCLK'
+Slack : -2.632
+TNS   : -178.802
+
+Type  : Fast 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -1.579
+TNS   : -49.842
+
+Type  : Fast 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -0.733
+TNS   : -19.509
+
+Type  : Fast 1200mV 0C Model Setup 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -0.496
+TNS   : -1.947
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.264
+TNS   : -2.036
+
+Type  : Fast 1200mV 0C Model Setup 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.102
+TNS   : -1.102
+
+Type  : Fast 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.873
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.000
+TNS   : -86.489
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|Audio_SerDes:u2|AUD_BCK'
+Slack : -3.000
+TNS   : -39.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|AudioCore:audio_unit|AudioInterfaceCore:audio_interface|I2C_Audio_Config:u1|mI2C_CTRL_CLK'
+Slack : -1.000
+TNS   : -48.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SRAwesomeProject_Core:core|PWMCounter:PWMCounter|FreqDividerN:clk|clkOut'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.411
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'core|audio_unit|audio_interface|p1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 27.557
+TNS   : 0.000
+
+------------------------------------------------------------

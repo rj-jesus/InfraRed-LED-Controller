@@ -7,7 +7,7 @@ def create_wav(data, file_name):
     wv = wave.open(file_name, 'w')
     n_channels = len(data[0])
     sample_width = 2
-    frame_rate = 44100
+    frame_rate = 48000
     wv.setparams((n_channels, sample_width, frame_rate, 0, 'NONE', 'Not Compressed'))
     wv_data = ''
     for v in data:
