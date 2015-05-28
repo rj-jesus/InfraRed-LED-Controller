@@ -11,3 +11,4 @@
 *.blg
 *.pyg
 !ua.pdf
+db

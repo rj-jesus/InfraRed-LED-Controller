@@ -2,29 +2,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity IRReceiver is
-  port(iClk        : in std_logic;                       --Clock at 50MHz
-       iIRDA       : in std_logic;                       --IR receiver
-       iRst        : in std_logic;                       --Reset signal
-       oData_Ready : out std_logic;                      --Data ready flag
-       oData       : out std_logic_vector(7 downto 0));  --Data out
+  port(iClk        : in std_logic;
+       iIRDA       : in std_logic;
+       iRst        : in std_logic;
+       oData_Ready : out std_logic;
+       oData       : out std_logic_vector(7 downto 0));
 end IRReceiver;
 
 architecture Behavioral of IRReceiver is
-  signal IDLE     : std_logic_vector(1 downto 0) := "00";  --While signal is HIGH
-  signal Guidance : std_logic_vector(1 downto 0) := "01";  --Stimulus received: 9ms LOW -> 4.5ms HIGH?
-  signal DataRead : std_logic_vector(1 downto 0) := "10";  --'0': 0.6ms LOW -> 0.52ms HIGH
-                                                           --'1': 0.6ms LOW -> 1.66ms HIGH
-                                                           --Total: 32 bits
-  constant IDLE_HIGH_DUR     : natural := 262143;  --Threshold for DataRead -> IDLE
-                                                   --5.24ms / 20ns = 262143
-  constant GUIDE_LOW_DUR     : natural := 230000;  --Threshold for IDLE -> Guidance
-                                                   --4.6ms / 20ns = 230000
-  constant GUIDE_HIGH_DUR    : natural := 210000;  --Threshold for Guidance -> DataRead
-                                                   --4.2ms / 20ns = 210000
-  constant DATA_HIGH_DUR     : natural := 41500;   --Threshold for logic '1'
-                                                   --0.83ms / 20ns = 41500
-  constant BIT_AVAILABLE_DUR : natural := 20000;   --Bit available time
-                                                   --0.4ms / 20ns = 20000
+  signal IDLE     : std_logic_vector(1 downto 0) := "00";
+  signal Guidance : std_logic_vector(1 downto 0) := "01";
+  signal DataRead : std_logic_vector(1 downto 0) := "10";
+  constant IDLE_HIGH_DUR     : natural := 262143;
+  constant GUIDE_LOW_DUR     : natural := 230000;
+  constant GUIDE_HIGH_DUR    : natural := 210000;
+  constant DATA_HIGH_DUR     : natural := 41500;
+  constant BIT_AVAILABLE_DUR : natural := 20000;
   signal idle_count,      state_count,      data_count      : natural := 0;
   signal idle_count_flag, state_count_flag, data_count_flag : std_logic := '0';
   signal bitcount                                           : natural := 0;

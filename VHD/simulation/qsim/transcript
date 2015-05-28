@@ -1,0 +1,37 @@
+# do TopLevel.do
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:42:41 on May 23,2015
+# vlog -work work TopLevel.vo 
+# -- Compiling module C4Rom
+# 
+# Top level modules:
+# 	C4Rom
+# End time: 20:42:41 on May 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:42:41 on May 23,2015
+# vlog -work work C4.vwf.vt 
+# -- Compiling module C4Rom_vlg_sample_tst
+# -- Compiling module C4Rom_vlg_check_tst
+# -- Compiling module C4Rom_vlg_vec_tst
+# 
+# Top level modules:
+# 	C4Rom_vlg_vec_tst
+# End time: 20:42:41 on May 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "TopLevel.do" 
+# Start time: 20:42:42 on May 23,2015
+# Loading work.C4Rom_vlg_vec_tst
+# Loading work.C4Rom
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.C4Rom_vlg_sample_tst
+# Loading work.C4Rom_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : C4.vwf.vt(422)
+#    Time: 1 us  Iteration: 0  Instance: /C4Rom_vlg_vec_tst/tb_out
+# End time: 20:42:44 on May 23,2015, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
