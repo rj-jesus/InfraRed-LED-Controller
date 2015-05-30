@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY SandraRicardoAwesomeProject
+set_global_assignment -name TOP_LEVEL_ENTITY SRAwesomeProject
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:57:04  MAY 25, 2015"
 set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
@@ -52,9 +52,6 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_Y2 -to CLOCK_50
 set_location_assignment PIN_AG14 -to CLOCK2_50
 set_location_assignment PIN_AG15 -to CLOCK3_50
@@ -580,12 +577,9 @@ set_location_assignment PIN_H14 -to EXT_IO[3]
 set_location_assignment PIN_F14 -to EXT_IO[4]
 set_location_assignment PIN_E10 -to EXT_IO[5]
 set_location_assignment PIN_D9 -to EXT_IO[6]
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VHDL_FILE Audio/AudioLogicUnit.vhd
 set_global_assignment -name QXP_FILE Audio/AudioInterfaceCore.qxp
 set_global_assignment -name VHDL_FILE Audio/AudioCore.vhd
-set_global_assignment -name VHDL_FILE Bin7SegDecoder.vhd
 set_global_assignment -name VHDL_FILE SRAwesomeProject_Core.vhd
 set_global_assignment -name VHDL_FILE SRAwesomeProject.vhd
 set_global_assignment -name VHDL_FILE PWMCounter.vhd
@@ -597,4 +591,14 @@ set_global_assignment -name VHDL_FILE Bit8_7SegDec.vhd
 set_global_assignment -name VHDL_FILE ActionController.vhd
 set_global_assignment -name VHDL_FILE RedVector.vhd
 set_global_assignment -name VHDL_FILE Audio/SoundRom.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VHDL_FILE LCD/MYROM.vhd
+set_global_assignment -name VHDL_FILE LCD/LCD.vhd
+set_global_assignment -name VHDL_FILE LCD/LCD_INTERFACE.vhd
+set_global_assignment -name VHDL_FILE LCD/DELAY.vhd
+set_global_assignment -name VHDL_FILE LCD/LCD_Core.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

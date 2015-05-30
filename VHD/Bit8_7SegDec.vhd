@@ -3,20 +3,21 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
 entity Bit8_7SegDec is
-  port(--Input data
+  port(-- Input data
        binInput : in std_logic_vector(4 downto 0);
-       --Dozens
+       -- ON_OFF
+       iON_OFF  : in std_logic;
+       -- Dozens
        oHEX1    : out std_logic_vector(6 downto 0);
-       --Units
+       -- Units
        oHEX0    : out std_logic_vector(6 downto 0));
 end Bit8_7SegDec;
 
 architecture Behavioral of Bit8_7SegDec is
---  signal sDozens, sUnits : unsigned(3 downto 0) := 0;
   signal oData : std_logic_vector(13 downto 0);
 begin
---  sDozens <= unsigned(binInput) / 10
-  oData <= "10000001111001" when (binInput = "00001") else --01
+  oData <= "11111111111111" when (iON_OFF = '0') else      --
+           "10000001111001" when (binInput = "00001") else --01
            "10000000100100" when (binInput = "00010") else --02
            "10000000110000" when (binInput = "00011") else --03
            "10000000011001" when (binInput = "00100") else --04
@@ -47,7 +48,8 @@ begin
            "01001000010000" when (binInput = "11101") else --29
            "01100001000000" when (binInput = "11110") else --30
            "01100001111001" when (binInput = "11111") else --31
-           "10000001000000";                               --00
+           "HLLLLLLHLLLLLL";
+--         "10000001000000";                               --00
   oHEX1 <= oData(13 downto 7);
   oHEX0 <= oData(6 downto 0);
 end Behavioral;

@@ -1,5 +1,5 @@
 Flow report for SandraRicardoAwesomeProject
-Thu May 28 23:18:30 2015
+Fri May 29 20:57:53 2015
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu May 28 23:18:30 2015     ;
+; Flow Status                        ; Successful - Fri May 29 20:57:53 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; SandraRicardoAwesomeProject                ;
-; Top-level Entity Name              ; SandraRicardoAwesomeProject                ;
+; Top-level Entity Name              ; SRAwesomeProject                           ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 1,035 / 114,480 ( < 1 % )                  ;
+;     Total combinational functions  ; 999 / 114,480 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 600 / 114,480 ( < 1 % )                    ;
+; Total registers                    ; 600                                        ;
+; Total pins                         ; 64 / 529 ( 12 % )                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -65,55 +65,68 @@ agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 05/28/2015 23:18:05         ;
+; Start date & time ; 05/29/2015 20:56:08         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; SandraRicardoAwesomeProject ;
 +-------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 143993546064.143285148409104          ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                              ;
++-------------------------------------+---------------------------------------+-----------------------------+------------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value               ; Entity Name      ; Section Id     ;
++-------------------------------------+---------------------------------------+-----------------------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 143993546064.143292936702940          ; --                          ; --               ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --                          ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>                      ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --                          ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --                          ; --               ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --                          ; --               ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --                          ; SRAwesomeProject ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --                          ; SRAwesomeProject ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --                          ; SRAwesomeProject ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --                          ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                          ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --                          ; --               ; --             ;
+; TOP_LEVEL_ENTITY                    ; SRAwesomeProject                      ; SandraRicardoAwesomeProject ; --               ; --             ;
++-------------------------------------+---------------------------------------+-----------------------------+------------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 722 MB              ; 00:00:41                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:41                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 687 MB              ; 00:00:43                           ;
+; Fitter                    ; 00:00:44     ; 1.4                     ; 1278 MB             ; 00:00:55                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 583 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 721 MB              ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 561 MB              ; 00:00:05                           ;
+; Total                     ; 00:01:35     ; --                      ; --                  ; 00:02:00                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; ricardo-winpc    ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off SandraRicardoAwesomeProject -c SandraRicardoAwesomeProject
+quartus_fit --read_settings_files=off --write_settings_files=off SandraRicardoAwesomeProject -c SandraRicardoAwesomeProject
+quartus_asm --read_settings_files=off --write_settings_files=off SandraRicardoAwesomeProject -c SandraRicardoAwesomeProject
+quartus_sta SandraRicardoAwesomeProject -c SandraRicardoAwesomeProject
+quartus_eda --read_settings_files=off --write_settings_files=off SandraRicardoAwesomeProject -c SandraRicardoAwesomeProject
 
 
 

@@ -2,9 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity AudioCore is
-  port(CLOCK_50   : in std_logic;
-       iRst       : in std_logic;
-       iAudioEn   : in std_logic;
+  port(-- Clock, Reset and Audio Enable
+       CLOCK_50    : in std_logic;
+       iRst        : in std_logic;
+       iAudioEn    : in std_logic;
        -- Audio Serial Data Interface
        AUD_ADCLRCK : inout std_logic;
        AUD_ADCDAT  : in std_logic;
@@ -13,8 +14,8 @@ entity AudioCore is
        AUD_BCLK    : inout std_logic;
        AUD_XCK     : out std_logic;
        -- Audio I2C Configuration Interface
-       I2C_SCLK : out std_logic;
-       I2C_SDAT : inout std_logic);
+       I2C_SCLK    : out std_logic;
+       I2C_SDAT    : inout std_logic);
 end AudioCore;
 
 architecture Core of AudioCore is
@@ -56,6 +57,7 @@ begin
              AUD_XCK         => AUD_XCK,
              I2C_SCLK        => I2C_SCLK,
              I2C_SDAT        => I2C_SDAT);
+  -- Instancing of the Audio Logic Unit
   audio_logic : entity work.AudioLogicUnit(RTL)
     port map(iClk         => AUD_BCLK,
              iRST         => iRst,
