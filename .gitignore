@@ -12,3 +12,4 @@
 *.pyg
 !ua.pdf
 db
+!RTLViewer.pdf
