@@ -3,7 +3,7 @@
 
 ### What is it?
 
-**InfraRed LED Controller** is a simple project written in VHDL developped using Altera's DE2-115 Kit while we were taking "Laboratórios de Sistemas Digitais" (Digital Systems' Labs).
+**InfraRed LED Controller** is a simple project written in VHDL developed using Altera's DE2-115 Kit while we were taking "Laboratórios de Sistemas Digitais" (Digital Systems' Labs).
 
 
 ### What does it do?
